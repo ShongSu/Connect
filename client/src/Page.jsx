@@ -1,34 +1,41 @@
 import React from 'react';
 import Contents from './Contents.jsx';
-import { Navbar, Nav,Button,Container,Row,Col,Breadcrumb}  from 'react-bootstrap';
+import { Navbar, Nav,Button,Container,Row,Col,Breadcrumb,Form,FormControl}  from 'react-bootstrap';
 
 function NavBar() {
     return (
-        <Navbar className="navbar_wrapper">
-        <Navbar.Brand href="/home">ExpFinder</Navbar.Brand>
+      <Navbar bg="light" variant="light">
+        <Navbar.Brand href="/">Maimai</Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link className="navbar_link" href="/page1">Find Opportunities</Nav.Link>
-          <Nav.Link href="/page2">Page 2</Nav.Link>
-          <Nav.Link href="/page3">Page 3</Nav.Link>
+          <Nav.Link href="/home">Home</Nav.Link>
+          <Nav.Link href="/feed_list">Contacts</Nav.Link>
+          <Nav.Link href="/feed_explore">Explore</Nav.Link>
+          <Nav.Link href="/headline">News</Nav.Link>
+          <Nav.Link href="/gossip_list">Discussion</Nav.Link>
+          <Nav.Link href="/page1">Jobs</Nav.Link>
+          <Nav.Link href="/page3">Recruitment</Nav.Link>
+          <Nav.Link href="/page3">Chart</Nav.Link>
         </Nav>
-        <Button variant="outline-light">Log In</Button>
-        <Button variant="outline-light">Sign Up</Button>
-
+          <Button variant="outline-primary">Log In / Sign Up</Button>
       </Navbar>)
 }
 
 function Footer() {
     return (
-        <div style={{background:'#0052ff', color:'white', height:'200px'}}>
-    
-    <Container>
-  <Row>
-    <Col>Footer column 1 of 3</Col>
-    <Col>Footer column 2 of 3</Col>
-    <Col>Footer column 3 of 3</Col>
-  </Row>
-</Container>
-      </div>)
+        <div style={{background:'', color:'blue', height:'200px'}}>
+          <Container>
+            <Row>
+              <Col>Contact</Col>
+              <Col>About</Col>
+              <Col>Join Us</Col>
+            </Row>
+            <Row>
+              <Col>
+                Copyright © maimai.cn. All rights reserved. 京ICP备12005786号-1 | 京公网安备11010802020015号 | 证照中心
+              </Col>
+            </Row>
+          </Container>
+        </div>)
 }
 
 export default function Page() {
